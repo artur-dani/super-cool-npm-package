@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Unit Tests",
+      "type": "node",
+      "request": "launch",
+      "program": "node_modules/jest-cli/bin/jest.js",
+      "preLaunchTask": "unitTestsDebugPreLaunchTask"
+    },
+    {
+      "name": "Example",
+      "type": "node",
+      "request": "launch",
+      "program": "./build-examples/examples/app.js",
+      "preLaunchTask": "exampleDebugPreLaunchTask",
+      "console":"integratedTerminal"
+    },
+  ]
+}
